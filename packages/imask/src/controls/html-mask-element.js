@@ -89,7 +89,7 @@ class HTMLMaskElement extends MaskElement {
     }
 
     if (handler) {
-      this.input.addEventListener(event, handler);
+      this.input.addEventListener(event, handler, true);
       this._handlers[event] = handler;
     }
   }
